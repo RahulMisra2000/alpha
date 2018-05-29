@@ -18,4 +18,15 @@
   </li>
 </ul>
 
+<hr>aaaaaaaaaaa
+<form (ngSubmit)="onSubmit(formReference)" #formReference="ngForm" novalidate >
+	<input name="emailName" id="email" type="email" [(ngModel)]="email"  #emailReference="ngModel" required>
+	<button   type="submit">Submit</button>
+</form>
+
+
+<pre> {{formReference}} </pre>
+
+
+
 <router-outlet></router-outlet>
